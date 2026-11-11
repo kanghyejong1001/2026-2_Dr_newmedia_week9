@@ -56,7 +56,12 @@ elif choice == "Login":
 
 elif choice == "pythonid":
     st.title("📝 파이썬 학습")
-    components.html('<iframe style="border:1px #FFFFFF none" src="https://www.online-python.com/" title="iFrame" width="100%" height="1800px" scrolling="yes" frameborder="no" allow="fullscreen"></iframe>', height=820)
+    components.html(
+        '<iframe style="border:1px #FFFFFF none" src="https://www.online-python.com/" title="iFrame" ' \
+        'width="100%" height="1800px" scrolling="yes" frameborder="no" ' \
+        'allow="fullscreen"></iframe>', 
+        height=820, scrolling=True
+    )
 
 elif choice == "블록리게임":
     st.title("🧩 블록리게임 (Blockly Games)")
